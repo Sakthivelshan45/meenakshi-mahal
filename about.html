@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marrage Hall Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14ed9317d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="no-copy">
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="wedding/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="material-icons" onclick="hidemenu()">close</i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="gallary.html">GALLERY</a></li>
+                </ul>
+            </div>
+            <i class="material-icons" id="material-icons" onclick="showmenu()">menu</i>
+        </nav>
+        <h1>About</h1>
+        <h5> <strong> HOME / <span> About us </strong></span></h5>
+    </section>
+
+    <!-- ----------------ABout US------------- -->
+
+    <section class="about-us">
+
+        <div class="row">
+
+
+            <div class="container about-col">
+                <h1 class="hai">BEST MARRIAGE HALLS IN RASIPURAM</h1>
+                <p>Proudly reigning as Rasipuram's grandest wedding venue.</p>
+
+                <blockquote class="blockquote">
+                    <p>
+                        Meenakshi Mahal stands out as a captivating and refined event venue.
+                        By planning a Wedding in Meenakshi Mahal, you avail yourself of many benefits that will ease the
+                        process of executing the perfect wedding in rasipuram.
+                        it exudes a sense of tranquility that enhances the uniqueness of every occasion held here.
+                        Renowned as a premier choice for wedding celebrations and various events, Meenakshi Mahal offers
+                        a distinctive and well-equipped setting.
+                        <br><br>
+                        The venue has beautiful hanging lights and modern lighting that create a nice atmosphere.
+                        which collectively create an ideal ambiance and a touch of brilliance to any event.
+                        Its spacious halls serve as an impeccable backdrop for both pre-wedding functions and grand
+                        receptions.
+
+                        <br><br>
+                        When it comes to Marriage Halls in Rasipuram, it is conveniently located right near the city,
+                        it gives you a sense of serenity and calmness that can embellish your events to make them
+                        special in every way.
+                        Meenakshi Mahal, being the best Wedding Hall in Rasipurams.
+                    </p>
+
+                    <footer><small> ---From Meenakshi Mahal!</small></footer>
+                </blockquote>
+                <a href="https://g.co/kgs/5vJRur" class="hero-btn red-btn" data-bs-toggle="tooltip"
+                    data-bs-placement="top" title="Click To Explore More">EXPLORE NOW</a>
+            </div>
+
+            <div class="about-col">
+                <img src="eduford_img/wedd-back.jpg">
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ----------footer----------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Meenakshi Mahal, located near Rasipuram, is a serene and well-appointed venue, <br>
+            perfect for elegant wedding ceremonies and events.
+        </p>
+
+        <b>Stay in touch</b> <br>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100017443506026&mibextid=ZbWKwL" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/SakthiV45?t=-F2fAbw8M86CcPNFr8HZyg&s=08" target="_blank"><i
+                    class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com/sakthivel.shan?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sakthivel-shanmugam-5a60a1246" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <p>
+
+            Crafted with passion by <a href="https://sakthivel-shan.netlify.app/">Sakthivel Shanmugam</a>.💖
+        </p>
+    </section>
+
+
+
+    <!------------------------------------ javacript---------------------------------->
+    <script>
+        var navlink = document.getElementById("navLinks");
+
+        function showmenu() {
+            navlink.style.right = "0";
+            console.log("MENU CLICKED");
+        }
+
+        function hidemenu() {
+            navlink.style.right = "-200px";
+            console.log("MENU CLOSED");
+        }
+    </script>
+</body>
+
+</html>

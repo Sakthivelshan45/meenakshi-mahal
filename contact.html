@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marrage Hall Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14ed9317d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="no-copy">
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="wedding/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="material-icons" onclick="hidemenu()">close</i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="gallary.html">GALLERY</a></li>
+                </ul>
+            </div>
+            <i class="material-icons" onclick="showmenu()">menu</i>
+        </nav>
+        <h1>Contact</h1>
+        <h5>HOME / <span>Contact Us</span></h5>
+    </section>
+
+    <!-- ----------------Contact US------------- -->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.410921242212!2d78.16777910995066!3d11.
+        450237488695542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babc268d9d6810d%3A0x828f7fd9a93cdedd!2sF52C%2B34X%2C%20
+        Kavundampalayam%2C%20Tamil%20Nadu%20637408!5e0!3m2!1sen!2sin!4v1692025679174!5m2!1sen!2sin" width="600"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <h6>For Bookings Contact</h6> <br><br>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Meenakshi mahal A/C, Kavundampalayam, Rasipuram</h5>
+                        <p>Tamil Nadu, 637408, INDIA</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>(+91) 9025751328</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>Meenakshimahal@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="contact-col">
+                <h6>Want to ask us something? Please don’t hesitate to get in touch to us via our contact form.</h6>
+                <br>
+                <form action="form-handler.php" method="post" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Email" required>
+                    <input type="text" name="Phone" placeholder="Enter Your Phone Number" required>
+                    <textarea rows="8" name="Message" placeholder="Message"></textarea>
+                    <button class="hero-btn red-btn" type="submit" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click To Send Send Message">Send Message</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ----------footer----------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Meenakshi Mahal, located near Rasipuram, is a serene and well-appointed venue, <br>
+            perfect for elegant wedding ceremonies and events.
+        </p>
+
+        <b>Stay in touch</b> <br>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100017443506026&mibextid=ZbWKwL" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/SakthiV45?t=-F2fAbw8M86CcPNFr8HZyg&s=08" target="_blank"><i
+                    class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com/sakthivel.shan?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sakthivel-shanmugam-5a60a1246" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <p>
+            Crafted with passion by <a href="https://sakthivel-shan.netlify.app/">Sakthivel Shanmugam</a>.💖
+        </p>
+    </section>
+
+
+
+    <!------------------------------------ javacript---------------------------------->
+    <script>
+        var navlink = document.getElementById("navLinks");
+
+        function showmenu() {
+            navlink.style.right = "0";
+            console.log("MENU CLICKED");
+        }
+
+        function hidemenu() {
+            navlink.style.right = "-200px";
+            console.log("MENU CLOSED");
+        }
+    </script>
+
+    <!-- ---------------------------------------contact form--------------------------- -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyFYmZbo6_GlkctZlXiq5DaYvufwcX9aZw64N1mGlyewv81xst9Gze6b_iKY3HO8PkPMA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Hi there, we've received your message and will respond as swiftly as we can🤝.";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+
+                    }, 4000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
